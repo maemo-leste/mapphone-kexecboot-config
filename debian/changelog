@@ -1,0 +1,5 @@
+mapphone-kexecboot-config (0.1) unstable; urgency=medium
+
+  * Initial packaging
+
+ -- Ivan J. <parazyd@dyne.org>  Tue, 11 May 2021 13:11:17 +0200
