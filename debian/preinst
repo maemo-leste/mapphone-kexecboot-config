@@ -23,4 +23,6 @@ file, then it is safe to ignore this warning
 **********************************************
 EOM
 
+#DEBHELPER#
+
 exit 0
