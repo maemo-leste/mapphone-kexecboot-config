@@ -1,0 +1,28 @@
+#!/bin/sh
+set -e
+
+main_path="/boot/boot/boot.cfg"
+orig_path="/boot/boot/boot.cfg.orig-before-leste"
+
+case "$1" in
+remove|purge)
+	rm -f "$main_path"
+	if ! [ -f "$orig_path" ]; then
+		cat <<EOM
+**********************************************
+                    WARNING
+A backup of the kexecboot configuration file
+in ${orig_path} was not found.
+
+Please set up a "${main_path}" file so you
+do not render your system unbootable.
+**********************************************
+EOM
+		exit 0
+	fi
+
+	mv "$orig_path" "$main_path"
+	;;
+esac
+
+exit 0
