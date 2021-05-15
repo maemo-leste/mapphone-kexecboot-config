@@ -5,8 +5,6 @@ main_path="/boot/boot/boot.cfg"
 dist_path="/boot/boot/boot.cfg.leste"
 orig_path="/boot/boot/boot.cfg.orig-before-leste"
 
-changed=0
-
 if [ -L "$main_path" ]; then
 	# Do nothing if the file is already a symlink
 	exit 0
@@ -14,16 +12,11 @@ fi
 
 if [ -e "$main_path" ]; then
 	mv "$main_path" "$orig_path"
-
-	if ! diff "$dist_path" "$orig_path" >/dev/null; then
-		changed=1
-	fi
 fi
 
 ln -s "$dist_path" "$main_path"
 
-if [ "$changed" -gt 0 ]; then
-	cat <<EOM
+cat <<EOM
 **********************************************
                 WARNING
 The kexecboot file in ${main_path} was
@@ -36,7 +29,6 @@ If you never made changes to your existing
 file, then it is safe to ignore this warning
 **********************************************
 EOM
-fi
 
 #DEBHELPER#
 
