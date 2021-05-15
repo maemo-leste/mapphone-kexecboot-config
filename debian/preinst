@@ -20,7 +20,7 @@ if [ -e "$main_path" ]; then
 	fi
 fi
 
-ln -s "$dist_path" "$orig_path"
+ln -s "$dist_path" "$main_path"
 
 if [ "$changed" -gt 0 ]; then
 	cat <<EOM
