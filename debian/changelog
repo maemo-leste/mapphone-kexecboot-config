@@ -1,3 +1,9 @@
+mapphone-kexecboot-config (0.2) unstable; urgency=medium
+
+  * Use Makefile to install necessary files.
+
+ -- Ivan J. <parazyd@dyne.org>  Sat, 15 May 2021 19:27:25 +0200
+
 mapphone-kexecboot-config (0.1) unstable; urgency=medium
 
   * Initial packaging
