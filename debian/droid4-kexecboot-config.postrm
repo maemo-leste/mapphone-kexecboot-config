@@ -5,7 +5,7 @@ main_path="/boot/boot/boot.cfg"
 orig_path="/boot/boot/boot.cfg.orig-before-leste"
 
 case "$1" in
-remove|purge)
+remove)
 	rm -f "$main_path"
 	if ! [ -f "$orig_path" ]; then
 		cat <<EOM
