@@ -14,7 +14,7 @@ if [ -e "$main_path" ]; then
 	mv "$main_path" "$orig_path"
 fi
 
-ln -s "$(basename "dist_path")" "$main_path"
+ln -s "$(basename "$dist_path")" "$main_path"
 
 cat <<EOM
 **********************************************
