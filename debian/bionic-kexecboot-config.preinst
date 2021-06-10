@@ -1,6 +1,10 @@
 #!/bin/sh
 set -e
 
+if ! [ -d /boot/boot ]; then
+	exit 0
+fi
+
 main_path="/boot/boot/boot.cfg"
 dist_path="/boot/boot/boot.cfg.leste"
 orig_path="/boot/boot/boot.cfg.orig-before-leste"
