@@ -11,6 +11,12 @@ Architecture: all
 Depends: ${misc:Depends}
 Description: boot.cfg file for Motorola Droid4 kexecboot
 
+Package: droid3-kexecboot-config
+Section: droid3
+Architecture: all
+Depends: ${misc:Depends}
+Description: boot.cfg file for Motorola Droid3 kexecboot
+
 Package: bionic-kexecboot-config
 Section: bionic
 Architecture: all
