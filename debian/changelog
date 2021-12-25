@@ -1,3 +1,9 @@
+mapphone-kexecboot-config (0.4) unstable; urgency=medium
+
+  * Add Droid 3
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sat, 25 Dec 2021 13:36:49 +0100
+
 mapphone-kexecboot-config (0.3) unstable; urgency=medium
 
   * Use relative paths for symlinking.
