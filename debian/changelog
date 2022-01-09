@@ -1,3 +1,9 @@
+mapphone-kexecboot-config (0.5) unstable; urgency=medium
+
+  * Add charge mode to all mapphone devices
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sun, 09 Jan 2022 18:32:25 +0100
+
 mapphone-kexecboot-config (0.4) unstable; urgency=medium
 
   * Add Droid 3
