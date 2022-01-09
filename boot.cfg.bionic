@@ -2,7 +2,7 @@ LABEL=Maemo Leste
 PRIORITY=8
 DTB=/boot/omap4-droid-bionic-xt875.dtb
 KERNEL=/boot/zImage
-CMDLINE=console=tty0 debug earlycon ro rootwait rootfstype=ext4 root=/dev/mmcblk0p2
+CMDLINE=console=tty0 debug earlycon ro rootwait rootfstype=ext4 root=/dev/mmcblk0p2 softlevel=charge-mode
 TIMEOUT=5
 
 LABEL=Maemo Leste Emergency Shell
