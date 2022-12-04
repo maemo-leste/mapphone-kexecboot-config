@@ -1,0 +1,39 @@
+#!/bin/sh
+set -e
+
+if ! [ -d /boot/boot ]; then
+	exit 0
+fi
+
+main_path="/boot/boot/boot.cfg"
+dist_path="/boot/boot/boot.cfg.leste"
+orig_path="/boot/boot/boot.cfg.orig-before-leste"
+
+if [ -L "$main_path" ]; then
+	# Do nothing if the file is already a symlink
+	exit 0
+fi
+
+if [ -e "$main_path" ]; then
+	mv "$main_path" "$orig_path"
+fi
+
+ln -s "$(basename "$dist_path")" "$main_path"
+
+cat <<EOM
+**********************************************
+                WARNING
+The kexecboot file in ${main_path} was
+moved to ${orig_path}
+and the new file was symlinked. If you want
+to restore your old boot.cfg, please change
+this symlink to link to your old file.
+
+If you never made changes to your existing
+file, then it is safe to ignore this warning
+**********************************************
+EOM
+
+#DEBHELPER#
+
+exit 0
