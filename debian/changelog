@@ -1,3 +1,9 @@
+mapphone-kexecboot-config (0.6) unstable; urgency=medium
+
+  * Add charge mode to all mapphone devices
+
+ -- Carl Klemm <carl@uvos.xyz>  Sun, 04 Dec 2022 14:22:15 +0100
+
 mapphone-kexecboot-config (0.5) unstable; urgency=medium
 
   * Add charge mode to all mapphone devices
