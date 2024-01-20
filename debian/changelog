@@ -1,3 +1,9 @@
+mapphone-kexecboot-config (0.7) unstable; urgency=medium
+
+  * Add scripts for xt912 too
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sat, 20 Jan 2024 14:01:24 +0100
+
 mapphone-kexecboot-config (0.6) unstable; urgency=medium
 
   * Add charge mode to all mapphone devices
