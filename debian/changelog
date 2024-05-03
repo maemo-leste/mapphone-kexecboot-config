@@ -1,3 +1,9 @@
+mapphone-kexecboot-config (0.8) unstable; urgency=medium
+
+  * Add scripts for mz617
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sat, 04 May 2024 01:24:07 +0200
+
 mapphone-kexecboot-config (0.7) unstable; urgency=medium
 
   * Add scripts for xt912 too
