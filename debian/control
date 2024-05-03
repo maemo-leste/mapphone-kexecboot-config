@@ -29,3 +29,8 @@ Package: xt912-kexecboot-config
 Architecture: all
 Depends: ${misc:Depends}
 Description: boot.cfg file for Motorola Droid Razr kexecboot
+
+Package: mz617-kexecboot-config
+Architecture: all
+Depends: ${misc:Depends}
+Description: boot.cfg file for Motorola Droid Mz617 kexecboot
