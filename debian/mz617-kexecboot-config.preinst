@@ -1,9 +1,12 @@
 #!/bin/sh
 set -e
 
-if ! [ -d /boot/boot ]; then
+if ! [ -d /boot ]; then
+	echo "/boot does not exist, skipping preinst"
 	exit 0
 fi
+
+mkdir -p /boot/boot
 
 main_path="/boot/boot/boot.cfg"
 dist_path="/boot/boot/boot.cfg.leste"
