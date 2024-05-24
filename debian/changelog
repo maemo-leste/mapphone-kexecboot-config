@@ -1,3 +1,9 @@
+mapphone-kexecboot-config (0.10) unstable; urgency=medium
+
+  * Attempt to fix image-time installation of boot.cfg
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sat, 25 May 2024 01:07:40 +0200
+
 mapphone-kexecboot-config (0.9) unstable; urgency=medium
 
   * Update Makefile for mz617
