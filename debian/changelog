@@ -1,3 +1,9 @@
+mapphone-kexecboot-config (1.0) unstable; urgency=medium
+
+  * Dont rotate frambuffer on mz617
+
+ -- Carl Klemm <carl@uvos.xyz>  Mon, 07 Oct 2024 23:37:18 +0200
+
 mapphone-kexecboot-config (0.10) unstable; urgency=medium
 
   * Attempt to fix image-time installation of boot.cfg
